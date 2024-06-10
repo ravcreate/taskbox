@@ -12,7 +12,7 @@ export const ActionsData = {
 // default meta data
 export default {
     component: Task, // The component
-    title: "Example/Task", // name/group in the sidebar
+    title: "Single/Task", // name/group in the sidebar
     tags: ["autodocs"], // auto generate docs
     excludeStories: /.*Data$/, //info required but shouldnt be rendered
     args: {
