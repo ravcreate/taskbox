@@ -31,7 +31,7 @@ export default function Task({
                     name="title"
                     id={`title-${id}`}
                     placeholder="Input title"
-                    style={{ backgroundColor: "blue" }}
+                    style={{ backgroundColor: "red" }}
                 />
             </label>
 
