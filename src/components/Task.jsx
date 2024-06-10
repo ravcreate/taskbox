@@ -1,16 +1,3 @@
-import PropTypes from "prop-types";
-
-// Specify Types - specify the shape of data
-Task.propTypes = {
-    task: PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        state: PropTypes.string.isRequired,
-    }),
-    onArchiveTask: PropTypes.func,
-    onPinTask: PropTypes.func,
-};
-
 export default function Task({
     task: { id, title, state },
     onArchiveTask,
@@ -44,8 +31,10 @@ export default function Task({
                     name="title"
                     id={`title-${id}`}
                     placeholder="Input title"
+                    style={{ backgroundColor: "blue" }}
                 />
             </label>
+
             {state !== "TASK_ARCHIVED" && (
                 <button
                     className="pin-button"
